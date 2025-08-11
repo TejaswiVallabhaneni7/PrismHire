@@ -1,0 +1,61 @@
+<!-- templates/index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PrismHire — AI Resume Screener</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="site-hero">
+    <div class="hero-inner">
+      <h1>PrismHire</h1>
+      <p>AI resume screening — fast, explainable, deployable</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Upload a resume</h2>
+      <form id="uploadForm">
+        <label for="job">Job description (paste key requirements)</label>
+        <textarea id="job" name="job" rows="4" placeholder="e.g. Python, SQL, machine learning, NLP, Power BI, OCI"></textarea>
+
+        <label for="resume">Choose resume (.pdf .docx .txt)</label>
+        <input id="resume" name="resume" type="file" accept=".pdf,.docx,.txt" required>
+
+        <button type="submit" id="submitBtn">Analyze resume</button>
+      </form>
+    </section>
+
+    <section class="card" id="results" style="display:none">
+      <h2>Results</h2>
+      <div class="result-row">
+        <div>
+          <h3>Match score</h3>
+          <canvas id="scoreChart" width="200" height="200"></canvas>
+          <div id="scoreVal" class="score-large"></div>
+        </div>
+
+        <div>
+          <h3>Keyword overlap</h3>
+          <p id="overlap"></p>
+          <h4>Matched keywords</h4>
+          <div id="matchedKeywords" class="chips"></div>
+        </div>
+      </div>
+
+      <h4>Resume preview (first 1000 chars)</h4>
+      <pre id="snippet" class="snippet"></pre>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>PrismHire — built by Tejaswi Vallabhaneni • <a href="mailto:tejaswivallabhaneni03@gmail.com">Contact</a></small>
+  </footer>
+
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
