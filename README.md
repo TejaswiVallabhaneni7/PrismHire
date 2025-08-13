@@ -1,109 +1,154 @@
-<!-- Badges -->
-<p align="center">
-  <a href="https://github.com/TejaswiVallabhaneni7/PrismHire/actions">
-    <img src="https://img.shields.io/github/actions/workflow/status/TejaswiVallabhaneni7/PrismHire/ci.yml?branch=main&style=for-the-badge" alt="Build Status"/>
-  </a>
-  <a href="https://github.com/TejaswiVallabhaneni7/PrismHire/stargazers">
-    <img src="https://img.shields.io/github/stars/TejaswiVallabhaneni7/PrismHire?style=for-the-badge" alt="Stars"/>
-  </a>
-  <a href="https://github.com/TejaswiVallabhaneni7/PrismHire/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/TejaswiVallabhaneni7/PrismHire?style=for-the-badge" alt="License"/>
-  </a>
-</p>
+# PrismHire AI 🚀 - Resume Matching & Talent Analytics
 
-<!-- Title and Tagline -->
-<h1 align="center">🌈 PrismHire</h1>
-<p align="center"><i>Your next generation hiring & recruitment platform, built for speed and simplicity.</i></p>
+![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Version](https://img.shields.io/badge/version-1.0.0-blueviolet)
+![Python](https://img.shields.io/badge/python-3.8%2B-blue)
+![Flask](https://img.shields.io/badge/flask-3.1.1-orange)
 
-<!-- Animated Demo GIF -->
-<p align="center">
-  <img src="https://media.giphy.com/media/L8K62iTDkzGX6/giphy.gif" alt="PrismHire Demo" width="640"/>
-</p>
+---
 
-<hr style="border-top: 8px solid #4f8cff; border-radius: 5px; width: 70%; margin: 40px auto;"/>
+![PrismHire Banner](https://user-images.githubusercontent.com/yourusername/prismhire-assets/main/banner.png)
 
-## ✨ Features
+> The next generation AI-powered **resume matching** and **talent analytics** platform 
 
-- 🚀 Lightning-fast candidate search and matching
-- 🎨 Beautiful, intuitive UI
-- 🤖 Smart recommendations powered by AI
-- 🔒 Secure authentication and data protection
-- 📈 Analytics for better decision-making
-- 🔗 Seamless integration with popular platforms
+---
 
-<hr style="border-top: 4px dashed #4f8cff; border-radius: 5px; width: 50%; margin: 40px auto;"/>
+## 🌟 Features Highlight - The PrismHire **Bento Grid**
 
-## 🛠️ How It Works
+| Feature                  | Description                                                           | Visual & Interaction Highlights                     |
+|--------------------------|-----------------------------------------------------------------------|----------------------------------------------------|
+| **Smart Resume Parsing** | Advanced NLP extraction of skills & keywords for precise job matching | Animated staggered cards, 3D tilt, smooth slide-in |
+| **Cinematic Analytics**  | Interactive dashboards visualizing strengths, gaps & talent insights  | Color-coded heatmaps, fluid transitions             |
+| **Modular Bento Grid**   | Clean, structured project showcase grid with polished typography      | Responsive grid, layered parallax, floating motifs  |
+| **Cloud-Ready AI**       | Scalability with secure ML pipelines and cloud deployment             | Smooth scroll anchors, cinematic transitions        |
 
-```mermaid
-flowchart TD
-    A[Candidate Applies] --> B[Screening]
-    B --> C[Interview]
-    C --> D[Offer]
-    D --> E[Hired! 🎉]
+---
+
+## 🚀 PrismHire Resume Matching Pipeline Flowchart
+
+```
++---------------------+
+| Upload Job & Resume  |
++----------+----------+
+           |
+           v
++---------------------+
+| Text Extraction &   |
+| NLP Parsing         |
++----------+----------+
+           |
+           v
++---------------------+
+| AI Scoring &        |
+| Keyword Matching    |
++----------+----------+
+           |
+           v
++---------------------+
+| Generate Match      |
+| Results             |
++----------+----------+
+           |
+           v
++---------------------+
+| Cinematic Results   |
+| Dashboard Display   |
++---------------------+
 ```
 
-<hr style="border-top: 2px solid #e0e0e0; width: 90%;"/>
+---
 
-## 🏗️ Architecture
+## 📊 Analytics Visual Elements
 
-```mermaid
-graph LR
-    FE[Frontend] --> API[API Server]
-    API --> DB[(Database)]
-    API --> AI[AI Recommendation Engine]
-    FE -- Webhooks --> INT[Integrations]
+
+
+
+
+  
+  
+  70%
+
+
+
+
+  
+  
+  
+  Skill A
+  Skill B
+  Skill C
+
+
+
+
+---
+
+## 🗂 Bento Grid Showcase (Conceptual)
+
+| Smart Resume Parsing           | Cinematic Analytics            |
+|-------------------------------|-------------------------------|
+| AI-powered NLP extraction      | Interactive dashboards         |
+| Animated staggered entrances   | Dynamic visual graphs          |
+
+| Modular Bento Grid             | Cloud-Ready AI                 |
+|-------------------------------|-------------------------------|
+| Clean structured design        | Scalable & secure backend      |
+| 3D hover effects              | Seamlessly deployable          |
+
+---
+
+## ⚙️ Under the Hood
+
+- **Flask backend** handling file uploads, powerful NLP parsing with PyMuPDF & python-docx.
+- **Advanced Machine Learning models** for resume-job scoring using scikit-learn.
+- **GSAP-powered animations** for parallax effects, floating UI elements, and scroll-triggered transitions.
+- Fully responsive with CSS variables & dark mode support.
+
+---
+
+## 🔥 Getting Started
+
+### Prerequisites
+- Python 3.8+
+- Setup virtual environment and install dependencies.
+
+### Setup Commands
+
+```
+python3 -m venv venv
+source venv/bin/activate  # or .\venv\Scripts\activate on Windows
+pip install -r requirements.txt
+python -m nltk.downloader stopwords
+python app.py
 ```
 
-<hr style="border-top: 2px solid #e0e0e0; width: 90%;"/>
+Open your browser at [http://127.0.0.1:5000](http://127.0.0.1:5000) and explore the cinematic AI hiring experience!
 
-## 📦 Installation
+---
 
-```bash
-git clone https://github.com/TejaswiVallabhaneni7/PrismHire.git
-cd PrismHire
-npm install
-```
+## 🌟 Why PrismHire?
 
-## 🚀 Quick Start
+Beyond AI precision and analytics, PrismHire delivers data-driven hiring insights into an elegant, compelling story.
 
-```bash
-npm start
-```
-Then open (https://probable-rotary-phone-6vg7r6x99q536r9-5000.app.github.dev/) to view PrismHire in your browser.
+---
 
-<hr style="border-top: 4px dotted #4f8cff; border-radius: 5px; width: 50%; margin: 40px auto;"/>
+## 📄 License
 
-## 💡 Why PrismHire?
+MIT License © 2025 PrismHire Team
 
-|               | PrismHire    | Others   |
-|:-------------:|:------------:|:--------:|
-| Speed         | ⚡️⚡️⚡️⚡️⚡️      | ⚡️⚡️     |
-| UI            | 🌈🌈🌈🌈🌈         | 🌈       |
-| AI Features   | 🤖🤖🤖🤖🤖         | 🤖       |
-| Integrations  | 🔗🔗🔗🔗🔗         | 🔗       |
+---
 
-<hr style="border-top: 8px solid #4f8cff; border-radius: 5px; width: 70%; margin: 40px auto;"/>
+## 🤝 Contributing
 
-## 📸 Screenshots
+Contributions welcome! See [`CONTRIBUTING.md`](CONTRIBUTING.md) for guidelines.
 
-<p align="center">
-  <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" width="400"/>
-  <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80" width="400"/>
-</p>
+---
 
-<hr style="border-top: 2px solid #e0e0e0; width: 90%;"/>
+![GitHub Fork Ribbon](https://camo.githubusercontent.com/9c0680ab46e60d400b10b967a21944f1425404d8f7e9df6b59f4a4cd18534a90/68747470733a2f2f696d672e736869656c64732e696f2f67726166666974692f6769746875622d66726f6b2d726962626f6e2e737667)
 
-## 🙏 Acknowledgements
+*Built with 💙 by the PrismHire Team*
 
-- [Unsplash](https://unsplash.com/) for open images
-- [Mermaid.js](https://mermaid-js.github.io/) for flowcharts
-- [Giphy](https://giphy.com/) for GIFs
-- [shields.io](https://shields.io/) for badges
+---
 
-<!-- Footer -->
-<p align="center">
-  <a href="https://github.com/TejaswiVallabhaneni7/PrismHire">
-    <img src="https://img.shields.io/badge/Star-PrismHire-4f8cff?style=for-the-badge" alt="Star PrismHire"/>
-  </a>
-</p>
+*Feel free to open issues or pull requests to contribute or improve!*
